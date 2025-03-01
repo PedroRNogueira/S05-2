@@ -1,0 +1,12 @@
+.container{
+    border: 1px solid black;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20%,60%,20%;
+    grid-template-rows: 20%,60%,20%;
+}
+.box{
+    border: 1px solid black;
+    height: 150px;
+    background-color: aqua;
+}
