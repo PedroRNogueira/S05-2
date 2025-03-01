@@ -1,12 +1,81 @@
-.container{
-    border: 1px solid black;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 20%,60%,20%;
-    grid-template-rows: 20%,60%,20%;
-}
-.box{
-    border: 1px solid black;
-    height: 150px;
-    background-color: aqua;
-}
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  /* Container geral (vertical) */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column; /* Todos os elementos empilhados em coluna */
+    gap: 1rem;
+  }
+  
+  /* ====== Cabeçalho ====== */
+  .header {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    display: flex;           /* Alinha h1 e nav lado a lado, se desejar */
+    flex-direction: column;  /* Para ficar tudo empilhado mesmo em telas grandes, */
+    gap: 0.5rem;             /* mantenha column. Se quiser em linha, altere para row. */
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .header-nav a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* ====== Main (mensagens, aulas e notícias) ====== */
+  .main {
+    display: flex;
+    flex-direction: column; /* Mantém as seções empilhadas em qualquer tela */
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  /* Seções dentro do main */
+  .mensagens,
+  .aulas,
+  .noticias {
+    padding: 1rem;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+  }
+  
+  .card-aula {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding: 1rem;
+  }
+  
+  /* ====== Responsividade ======
+     Se quiser manter tudo em vertical, você pode
+     simplesmente não usar media queries ou deixar vazio.
+     Abaixo está um exemplo que não altera nada.
+  */
+  
+  @media (min-width: 768px) {
+    /* Sem mudanças para manter tudo em vertical */
+  }
+  
+  @media (min-width: 1024px) {
+    /* Sem mudanças para manter tudo em vertical */
+  }
+  

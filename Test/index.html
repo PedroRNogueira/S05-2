@@ -1,20 +1,65 @@
 <!DOCTYPE html>
-
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grid</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Esqueleto Vertical em Flex</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-    <div id="box-1" class="box"></div>
-    <div id="box-2" class="box"></div>
-    <div id="box-3" class="box"></div>
-    </div>
+
+  <div class="container">
     
+    <!-- Cabeçalho -->
+    <header class="header">
+      <h1>Olá, Raphael</h1>
+      <nav class="header-nav">
+        <!-- Ícones ou links do cabeçalho (placeholders) -->
+        <a href="#">Ícone 1</a>
+        <a href="#">Ícone 2</a>
+        <a href="#">Ícone 3</a>
+      </nav>
+    </header>
+    
+    <!-- Main (contém mensagens, aulas e notícias) -->
+    <div class="main">
+      
+      <!-- Mensagens -->
+      <section class="mensagens">
+        <h2>Mensagens</h2>
+        <p>Você possui um armário reservado com entrega para hoje.</p>
+        <p>Você possui uma pendência no financeiro.</p>
+      </section>
+      
+      <!-- Aulas -->
+      <section class="aulas">
+        <h2>Aulas</h2>
+        <article class="card-aula">
+          <h3>Disciplina 1</h3>
+          <p>Sala e Horário</p>
+        </article>
+        
+        <article class="card-aula">
+          <h3>Disciplina 2</h3>
+          <p>Sala e Horário</p>
+        </article>
+        
+        <article class="card-aula">
+          <h3>Disciplina 3</h3>
+          <p>Sala e Horário</p>
+        </article>
+      </section>
+      
+      <!-- Notícias -->
+      <section class="noticias">
+        <h2>Card de Notícias</h2>
+        <p>Subtítulo</p>
+        <!-- Adicione mais notícias ou cards conforme necessidade -->
+      </section>
+      
+    </div><!-- /.main -->
+    
+  </div><!-- /.container -->
+
 </body>
 </html>
